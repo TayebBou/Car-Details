@@ -2,7 +2,7 @@
 
 CarDetails is a website where users can look at cars and theire details and informations done with Next.js / React JS / TypeScript / SSR / Prime React / Cypress / CSS / Axios.
 
-
+![screencapture-localhost-3001-cars-G40012456-2022-06-30-21_42_01](https://user-images.githubusercontent.com/52780772/176763649-ee653450-9491-420c-b8e5-1f29b3eafa5a.png)
 
 ## How to run
 
