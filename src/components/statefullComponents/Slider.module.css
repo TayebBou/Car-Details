@@ -1,0 +1,54 @@
+.full-images {
+    display: flex;
+    overflow-x: hidden;
+    max-width: 40em;
+    position: relative;
+  }
+
+.right {
+    position: absolute;
+    width: 3em;
+    font-size: 2em;
+    border: none;
+    background-color: #00000000;
+    right: 0;
+    height: -webkit-fill-available;
+    color: white;
+    cursor: pointer;
+}
+
+.right:hover {
+    background-color: #00000042;
+}
+
+.right:focus-visible {
+    outline: none;
+}
+
+.right:disabled {
+    opacity: 0.2;
+}
+
+.left {
+    position: absolute;
+    width: 3em;
+    font-size: 2em;
+    border: none;
+    background-color: #00000000;
+    left: 0;
+    height: -webkit-fill-available;
+    color: white;
+    cursor: pointer;
+}
+
+.left:hover {
+    background-color: #00000042;
+}
+
+.left:focus-visible {
+    outline: none;
+}
+
+.left:disabled {
+    opacity: 0.2;
+}

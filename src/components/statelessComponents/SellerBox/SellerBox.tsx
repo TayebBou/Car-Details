@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import { FC } from 'react'
-import { ICar } from '../../types/car.model'
-import { IPricing } from '../../types/pricing.model'
+import { ICar } from '../../../types/car.model'
+import { IPricing } from '../../../types/pricing.model'
 import styles from './SellerBox.module.css'
 
 type SellerBoxProps = {

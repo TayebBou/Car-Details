@@ -1,6 +1,6 @@
 {
   "name": "car-details",
-  "version": "0.2.4",
+  "version": "0.3.5",
   "private": true,
   "scripts": {
     "dev": "set PORT=3001 && next dev",
