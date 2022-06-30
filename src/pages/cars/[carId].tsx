@@ -29,7 +29,7 @@ const Car: NextPage<CarProps> = (props) => {
 
       </div>
       <div className={styles.box}>
-        <SellerBox car={car} />
+        <SellerBox car={car} pricing={pricing} />
       </div>
     </div>
   )

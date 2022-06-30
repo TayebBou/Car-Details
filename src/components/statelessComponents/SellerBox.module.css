@@ -1,0 +1,31 @@
+.box {
+    box-shadow: 0px 0px 29px -9px;
+    padding: 1em;
+}
+
+.h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 1.6em;
+}
+
+.h3 {
+    text-decoration: line-through;
+}
+
+.button {
+    text-decoration: none;
+    border: none;
+    background-color: #ce0202;
+    color: white;
+    width: 80%;
+    margin: auto;
+    display: block;
+    height: 2.5em;
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #980000;
+}
