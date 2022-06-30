@@ -1,4 +1,4 @@
-# CarDetails/test-front-end
+# CarDetails/test-front-end done in 4h
 
 CarDetails is a website where users can look at cars and theire details and informations done with Next.js / React JS / TypeScript / SSR / Prime React / Cypress / CSS / Axios.
 
