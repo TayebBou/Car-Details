@@ -1,37 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CarDetails/test-front-end
 
-## Getting Started
+CarDetails is a website where users can look at cars and theire details and informations done with Next.js / React JS / TypeScript / SSR / Prime React / Cypress / CSS / Axios.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How to run
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Install Node.js plateform
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+( Choose the last LTS version recommanded for most users )
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+In the project directory, you can run:
 
-## Learn More
+### `npm install --global yarn`
 
-To learn more about Next.js, take a look at the following resources:
+to install the yarn package it's a better alternative of npm.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### `yarn install`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To install all dependencies.
 
-## Deploy on Vercel
+### `npm install -g json-server `
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To install json-server for API.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### `yarn start-server`
+
+To start the API.
+
+### `yarn dev`
+
+PORT : 3001
+Runs the app in the development mode.\
+Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### You can start using the application with all its features
+
+## Available Scripts
+
+### `yarn cypress open`
+
+To Launche the cypress desktop app (built with Electron) but before you need to have the app started with "yarn dev" and "yarn start-server" in an others terminals.
+
+### `yarn build`
+
+To build the project.
+
+# Context :
 
 # Coding Test Front end
 

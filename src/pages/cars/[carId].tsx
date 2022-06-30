@@ -18,8 +18,8 @@ type CarProps = {
 }
 
 const Car: NextPage<CarProps> = (props) => {
-  const [carNum, setCarNum] = useState(0)
   const { car, pricing, cars } = props
+  const [carNum, setCarNum] = useState(0)
   const router = useRouter()
   const photos = props.photos.outside.photos
 
@@ -32,7 +32,7 @@ const Car: NextPage<CarProps> = (props) => {
   }
 
   const handleNext = () => {
-    if(carNum !== (cars.length - 1)) {
+    if (carNum !== cars.length - 1) {
       setCarNum((x) => x + 1)
     }
   }
@@ -44,14 +44,22 @@ const Car: NextPage<CarProps> = (props) => {
           <button className={styles.button} onClick={() => router.back()}>
             Retour
           </button>
-          <button disabled={carNum === 0} className={styles.button} onClick={handleBack}>
+          <button
+            disabled={carNum === 0}
+            className={styles.button}
+            onClick={handleBack}
+          >
             {'< Précédent'}
           </button>
-          <button disabled={carNum === (cars.length - 1)} className={styles.button} onClick={handleNext}>{'Suivant >'}</button>
+          <button
+            disabled={carNum === cars.length - 1}
+            className={styles.button}
+            onClick={handleNext}
+          >
+            {'Suivant >'}
+          </button>
         </div>
-        <div>
-          <Slider photos={photos} />
-        </div>
+        <Slider photos={photos} />
         <div>
           <CarInfos car={car} />
         </div>
