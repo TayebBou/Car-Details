@@ -1,0 +1,17 @@
+.layout {
+  height: 5em;
+  background-color: rgb(204, 204, 204);
+  position: fixed;
+  width: 100%;
+  display: flex;
+}
+
+.logo {
+  width: 16em;
+  height: 4em;
+  margin: 0.5em 1em 0em 1em;
+}
+
+.h1 {
+  font-size: 1.7em;
+}
