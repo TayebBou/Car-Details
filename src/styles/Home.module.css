@@ -1,5 +1,15 @@
 .container {
   padding: 0 2rem;
+  margin-top: 5em;
+  display: flex;
+}
+
+.car {
+
+}
+
+.box {
+  
 }
 
 .main {
