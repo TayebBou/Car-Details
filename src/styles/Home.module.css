@@ -1,5 +1,20 @@
 .container {
   padding: 0 2rem;
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.car {
+  width: 60%;
+  margin-bottom: 5em;
+}
+
+.box {
+  width: 27em;
+  margin-left: 1%;
+  margin-top: 5em;
+  margin-bottom: 5em;
 }
 
 .main {
@@ -108,9 +123,53 @@
   margin-left: 0.5rem;
 }
 
+.buttons {
+  max-width: 38em;
+  margin-left: 1em;
+  margin-right: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+
+.button {
+  text-decoration: none;
+  border: none;
+  background-color: #ce0202;
+  color: white;
+  width: 28%;
+  margin: auto;
+  display: block;
+  height: 2.5em;
+  border-radius: 0.2em;
+  cursor: pointer;
+}
+
+.button:hover:enabled {
+  background-color: #980000;
+}
+
+.button:disabled {
+  opacity: 0.2;
+  cursor: auto;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 1160px) {
+  .car {
+    width: 100%;
+  }
+  .box {
+    width: 80%;
+    margin-top: 0;
+    max-width: 37em;
   }
 }
