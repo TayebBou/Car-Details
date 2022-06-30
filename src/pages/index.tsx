@@ -1,11 +1,12 @@
 import type { NextPage } from 'next'
 import { useRouter } from 'next/router'
+import { getServerSideProps } from '../services/services'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
 
   const router = useRouter()
-  
+
   return (
     <div className={styles.container}>
     </div>
@@ -13,3 +14,5 @@ const Home: NextPage = () => {
 }
 
 export default Home
+
+export { getServerSideProps }
