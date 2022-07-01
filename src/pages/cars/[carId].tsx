@@ -19,12 +19,15 @@ type CarProps = {
 
 const Car: NextPage<CarProps> = (props) => {
   const { car, pricing, cars } = props
-  const [carNum, setCarNum] = useState(0)
+  const index =  cars.findIndex((c) => c.id === car.id)
+  const [carNum, setCarNum] = useState(index)
   const router = useRouter()
   const photos = props.photos.outside.photos
-
+  
   useEffect(() => {
-    router.push(cars[carNum].id)
+    if (router.asPath !== '/cars/' + cars[carNum].id) {
+      router.push(cars[carNum].id)
+    }
   }, [carNum])
 
   const handleBack = () => {
@@ -36,6 +39,10 @@ const Car: NextPage<CarProps> = (props) => {
       setCarNum((x) => x + 1)
     }
   }
+
+  useEffect(() => {
+    setCarNum(index)
+  },[router.asPath])
 
   return (
     <div className={styles.container}>
